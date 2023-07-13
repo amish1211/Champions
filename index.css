@@ -19,6 +19,7 @@ html, body {
 
 body {
     background-color: #1B1924;
+    color: #1B1924;
   
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -56,11 +57,35 @@ textarea {
     border: none;
     padding: 12px 16px;
     color: white;
+    resize:none;
     
 }
 
-textarea::placeholder {
+textarea:focus {
+    border: none;
+}
+
+input::placeholder,textarea::placeholder {
    color: #8f8f8f;
+}
+
+.input-text-wrapper {
+    display: flex;
+    gap:10px;
+    margin-top:12px;
+}
+
+input {
+    width: 50%;
+    background: #444059;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: .8em;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    color: white;
+    
 }
 
 
@@ -82,14 +107,24 @@ img {
     font-weight: bold;
 }
 
+#publish-btn:hover,
+#publish-btn:focus {
+    background-color: #1E8ACF;
+    cursor: pointer;
+}
+
 #endorsement-list {
     padding: 0;
     margin:0;
     list-style-type: none;
 }
 
+#endorsement-list p {
+    margin-top: 0;
+}
+
 #endorsement-list li {
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Inter',sans-serif;
     font-weight: 400;
     background-color: white;
@@ -103,4 +138,30 @@ img {
 
 #endorsement-title {
     margin-block: 28px;
+}
+
+.like {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media (min-width: 850px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+.from-text {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.endorsement-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-text {
+    font-weight: bold;
 }
