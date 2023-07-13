@@ -27,9 +27,9 @@ publishBtn.addEventListener("click", function () {
 
 onValue(endorsementInDB, function (snapshot) {
   if (snapshot.exists()) {
+    clearEndorsementListEl();
     const endorsementsArray = Object.values(snapshot.val());
-    const lastEndorsement = endorsementsArray[endorsementsArray.length - 1];
-    appendToEndorsementList(lastEndorsement);
+    endorsementsArray.forEach(appendToEndorsementList);
   } else {
     clearEndorsementListEl();
   }
