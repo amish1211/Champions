@@ -42,6 +42,7 @@ h2 {
     text-align:center;
     max-width: 350px;
     margin: 0 auto;
+    padding-block-end: 1em;
     padding-inline: 1em;
 }
 
@@ -93,6 +94,7 @@ img {
     font-weight: 400;
     background-color: white;
     padding: 13px;
+    text-align: left;
 }
 
 #endorsement-list li + li {
