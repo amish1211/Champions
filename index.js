@@ -10,7 +10,7 @@ import {
 
 const appSettings = {
   databaseURL:
-    "https://champions-97458-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "https://champions-180d2-default-rtdb.firebaseio.com/",
 };
 
 const app = initializeApp(appSettings);
